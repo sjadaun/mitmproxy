@@ -45,6 +45,7 @@ export interface OptionsState {
     proxyauth: string | undefined;
     rawtcp: boolean;
     readfile_filter: string | undefined;
+    request_client_cert: boolean;
     rfile: string | undefined;
     save_stream_file: string | undefined;
     save_stream_filter: string | undefined;
@@ -141,6 +142,7 @@ export const defaultState: OptionsState = {
     proxyauth: undefined,
     rawtcp: true,
     readfile_filter: undefined,
+    request_client_cert: false,
     rfile: undefined,
     save_stream_file: undefined,
     save_stream_filter: undefined,
@@ -169,7 +171,6 @@ export const defaultState: OptionsState = {
     termlog_verbosity: "info",
     tls_ecdh_curve_client: undefined,
     tls_ecdh_curve_server: undefined,
-    request_client_cert: false,
     tls_version_client_max: "UNBOUNDED",
     tls_version_client_min: "TLS1_2",
     tls_version_server_max: "UNBOUNDED",
